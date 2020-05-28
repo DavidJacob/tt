@@ -1,6 +1,10 @@
 package geography
 
-import "github.com/gookit/color"
+import (
+	"fmt"
+
+	"github.com/gookit/color"
+)
 
 type CountryFact struct {
 	Name        string
@@ -25,16 +29,16 @@ var Countries = []CountryFact{
 		CapitalCity: "Vienna",
 		Population:  8902600,
 		Area:        83879,
-		Flag: Flag{
+		Flag: Flag{ // Ratio - 2:3
 			Colors: []color.RGBColor{
 				color.RGB(238, 36, 54),
 				color.RGB(255, 255, 255),
 				color.RGB(238, 36, 54),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
@@ -43,16 +47,16 @@ var Countries = []CountryFact{
 		CapitalCity: "Sofia",
 		Population:  6951482,
 		Area:        110993,
-		Flag: Flag{
+		Flag: Flag{ // Ratio - 3:5
 			Colors: []color.RGBColor{
 				color.RGB(255, 255, 255),
 				color.RGB(0, 128, 0),
 				color.RGB(200, 0, 0),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
@@ -61,16 +65,16 @@ var Countries = []CountryFact{
 		CapitalCity: "Talinn",
 		Population:  1328976,
 		Area:        45227,
-		Flag: Flag{
+		Flag: Flag{ // Ratio - 7:11
 			Colors: []color.RGBColor{
 				color.RGB(0, 115, 207),
 				color.RGB(0, 0, 0),
 				color.RGB(255, 255, 255),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
@@ -79,16 +83,16 @@ var Countries = []CountryFact{
 		CapitalCity: "Berlin",
 		Population:  83149300,
 		Area:        357022,
-		Flag: Flag{
+		Flag: Flag{ // Ratio - 3:5
 			Colors: []color.RGBColor{
 				color.RGB(0, 0, 0),
 				color.RGB(255, 0, 0),
 				color.RGB(255, 204, 0),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
@@ -97,16 +101,16 @@ var Countries = []CountryFact{
 		CapitalCity: "Budapest",
 		Population:  9772756,
 		Area:        93030,
-		Flag: Flag{
+		Flag: Flag{ // Ratio - 1:2
 			Colors: []color.RGBColor{
 				color.RGB(206, 37, 60),
 				color.RGB(255, 255, 255),
 				color.RGB(65, 112, 76),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
@@ -115,16 +119,16 @@ var Countries = []CountryFact{
 		CapitalCity: "Vilnius",
 		Population:  2794329,
 		Area:        65300,
-		Flag: Flag{
+		Flag: Flag{ // Ratio - 3:5
 			Colors: []color.RGBColor{
 				color.RGB(253, 185, 19),
 				color.RGB(0, 106, 68),
 				color.RGB(193, 39, 45),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
@@ -133,16 +137,16 @@ var Countries = []CountryFact{
 		CapitalCity: "Luxembourg City",
 		Population:  626108,
 		Area:        2586,
-		Flag: Flag{
+		Flag: Flag{ // Ratio - 3:5
 			Colors: []color.RGBColor{
 				color.RGB(238, 36, 54),
 				color.RGB(255, 255, 255),
 				color.RGB(0, 162, 223),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
@@ -151,16 +155,16 @@ var Countries = []CountryFact{
 		CapitalCity: "Amsterdam",
 		Population:  17424978,
 		Area:        41865,
-		Flag: Flag{
+		Flag: Flag{ // Ratio - 2:3 (informal)
 			Colors: []color.RGBColor{
 				color.RGB(174, 28, 40),
 				color.RGB(255, 255, 255),
 				color.RGB(30, 70, 139),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
@@ -176,10 +180,25 @@ var Countries = []CountryFact{
 				color.RGB(215, 31, 15),
 			},
 			Chars: []string{
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
-				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+				"\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
 			},
 		},
 	},
+}
+
+func PrintCountryFact(countryFact CountryFact) {
+	fmt.Println(color.FgLightBlue.Sprint("Name: ") + color.FgWhite.Sprint(countryFact.Name))
+	fmt.Println(color.FgLightBlue.Sprint("Capital: ") + color.FgWhite.Sprint(countryFact.CapitalCity))
+	fmt.Println(color.FgLightBlue.Sprint("Population: ") + color.FgWhite.Sprint(countryFact.Population))
+	fmt.Println(color.FgLightBlue.Sprint("Area: ") + color.FgWhite.Sprint(countryFact.Area))
+	printFlag(countryFact.Flag)
+}
+
+func printFlag(flag Flag) {
+	for i := 0; i < len(flag.Colors); i++ {
+		s := color.NewRGBStyle(flag.Colors[i])
+		s.Println(flag.Chars[i])
+	}
 }
